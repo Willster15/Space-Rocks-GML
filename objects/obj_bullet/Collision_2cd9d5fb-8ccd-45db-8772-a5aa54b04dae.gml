@@ -1,5 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
+score += 10
+
 instance_destroy();
 
 with(other){
@@ -11,7 +13,7 @@ with(other){
 			new_astroid.speed += 0.5;
 		}
 	}	else if(sprite_index == spr_medium){
-		repeat(3){
+		repeat(2){
 			var new_astroid = instance_create_layer(x, y, "Instances", obj_astroid);
 			new_astroid.sprite_index = spr_small;
 			new_astroid.speed += 0.5;
